@@ -151,6 +151,7 @@ pub fn (d Bot) get_me() User {
 pub struct ConfigSendMessage {
 pub:
 	chat_id string //Unique identifier for the target chat or username of the target channel (in the format @channelusername)
+	message_thread_id string // For sending message in defined chat in group
 	text string //Text of the message to be sent, 1-4096 characters after entities parsing
 	parse_mode string //Mode for parsing entities in the message text. See formatting options for more details.
 	disable_web_page_preview bool //Disables link previews for links in this message
